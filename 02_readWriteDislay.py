@@ -18,8 +18,9 @@ else:
 
 gray_image=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 
-cv2.imshow('color',image)
+cv2.imshow('color',image)               #컬러 사진
 
+cv2.imshow('gray_scale',gray_image)        #흑백 사진
 #위에 imshow 함수는 화면에 표시하는함수인데,
 #실행되었다가,바로 종료된다.
 # 왜냐하면 , cpurk imshow를 실행하고,아래 라인 실행하는데
@@ -27,4 +28,5 @@ cv2.imshow('color',image)
 
 # 따라서 우리 눈으로 확인하기 위해서는 
 # cpu의 코드실행을 잠시 멈추게 해야한다.
-cv2.waitKey(0)
+cv2.waitKey(0)                      #프로그램  wait
+cv2.destroyAllWindows()                   #모든창을 없애라
