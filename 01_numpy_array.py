@@ -24,7 +24,7 @@ array_2d=array_2d.reshape(3,2)
 # print(array_2d[1,1])
 # print(array_2d[1][1])
 
-# 이지 파일을 칼러(BGR)읽어오는 방법
+# 이미지 파일을 칼러(BGR)읽어오는 방법
 img =cv2.imread('data/images/sample.jpg')
 
 print(img)
